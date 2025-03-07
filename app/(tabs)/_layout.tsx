@@ -38,20 +38,20 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
-        options={{
-          title: "Explore",
-          tabBarIcon: ({ color }) => (
-            <IconSymbol size={28} name="paperplane.fill" color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="PDFViewer"
         options={{
           title: "PDF viewer",
           tabBarIcon: ({ color }) => (
-            <Ionicons size={28} name="document" color={color} />
+            <Ionicons size={28} name="document-outline" color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="PDFIframe"
+        options={{
+          title: "Iframe",
+          tabBarIcon: ({ color }) => (
+            <Ionicons size={28} name="laptop-outline" color={color} />
           ),
         }}
       />

@@ -1,22 +1,29 @@
-import * as React from "react";
+import { useEffect } from "react";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+import { GlobalWorkerOptions } from "pdfjs-dist";
 
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
+import { Text } from "react-native";
 
 const PDFViewer = () => {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  // const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
+  // useEffect(() => {
+  //   // Set the workerSrc property to point to the worker file
+  //   GlobalWorkerOptions.workerSrc =
+  //     "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  // }, []);
 
   return (
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
-      <div style={{ height: "100vh" }}>
-        <Viewer
-          fileUrl="/Horizontal-content.pdf"
-          plugins={[defaultLayoutPluginInstance]}
-        />
-      </div>
-    </Worker>
+    <div style={{ height: "100vh" }}>
+      <Text>Hello</Text>
+      {/* <Viewer
+        fileUrl="/Horizontal-content.pdf"
+        plugins={[defaultLayoutPluginInstance]}
+      /> */}
+    </div>
   );
 };
 
