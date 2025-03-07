@@ -25,7 +25,7 @@ export default function HomeScreen() {
           to use Node.js-specific code, which is not compatible with the browser
           or React Native.
         </Text>
-        <Link href="/(tabs)/pdfViewer" style={styles.link}>
+        <Link href="/(tabs)/PDFViewer" style={styles.link}>
           <Text style={styles.linkText}>Go to React PDF Viewer Tab</Text>
         </Link>
       </View>

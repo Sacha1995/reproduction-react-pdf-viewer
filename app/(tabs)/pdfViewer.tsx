@@ -18,7 +18,6 @@ const PDFViewer = () => {
 
   return (
     <div style={{ height: "100vh" }}>
-      <Text>Hello</Text>
       {/* <Viewer
         fileUrl="/Horizontal-content.pdf"
         plugins={[defaultLayoutPluginInstance]}
