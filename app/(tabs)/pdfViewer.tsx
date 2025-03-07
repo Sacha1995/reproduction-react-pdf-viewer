@@ -5,6 +5,7 @@ import { GlobalWorkerOptions } from "pdfjs-dist";
 
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
+import { Platform } from "react-native";
 
 const PDFViewer = () => {
   // const defaultLayoutPluginInstance = defaultLayoutPlugin();
@@ -14,6 +15,10 @@ const PDFViewer = () => {
   //   GlobalWorkerOptions.workerSrc =
   //     "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
   // }, []);
+
+  if (Platform.OS !== "web") {
+    return <div></div>;
+  }
 
   return (
     <div style={{ height: "100vh" }}>

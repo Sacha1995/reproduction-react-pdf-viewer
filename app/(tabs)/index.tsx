@@ -13,7 +13,8 @@ export default function HomeScreen() {
         <Text style={styles.cardTitle}>1. React PDF Viewer</Text>
         <Text style={styles.cardText}>
           The first tab uses `react-pdf-viewer`, this is currenctly commented
-          out. If you want to recreate the error, just uncomment the component.
+          out. If you want to recreate the error, just uncomment the problem
+          code and run npm to start again.
         </Text>
         <Text style={styles.note}>
           The error "Unable to resolve module canvas" occurs because pdfjs-dist
